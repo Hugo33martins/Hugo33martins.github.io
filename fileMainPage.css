@@ -319,13 +319,13 @@ a:hover{color:dodgerblue;}
 @media (max-width:1700px){
   #texte_introgestion{padding-top: 5%;}
   .fit-pictureBiosphere{flex-grow:1;width: 30%;height:30%; padding-right: 10%;}
+  .fit-picturegestion{width: 30%;padding-right: 8%;}
 
 }
 
 
 @media (max-width:1500px){
   #texte_Titre{margin-bottom: 4%;}
-  .fit-picturegestion{width: 35%;padding-right: 8%;}
   #div1_partie_princ2_template_retex{flex-grow: 1;text-align: center;width: 50%;padding-left: 2.5%;/*background-color: aliceblue;*/}
   #div2_partie_princ2_template_retex{flex-grow: 1;text-align: center;width: 50%;padding-right: 2.5%;/*background-color: aliceblue;*/}
   #partie_princ2_template_retex{padding-top:2%}
@@ -336,18 +336,16 @@ a:hover{color:dodgerblue;}
 }
 
 @media (max-width:1300px){
-  .fit-picturegestion{width: 40%;}
-  #texte_introgestion{padding-top: 5%;}
+  .fit-picturegestion{width: 35%;}
   .fit-picture_template_retex{width: 55%;padding-right: 4%;}
   #div1_partie_princ2_template_retex{flex-grow: 1;text-align: center;width: 50%;padding-left: 0%;}
-  #texte_introgestion{padding-top: 0%;}
+  #texte_introgestion{padding-top: 8%;}
   .fit-pictureSQL{width: 40%;height:40%; padding-right: 6%;padding-top: 10%;}
 
 }
 
 @media (max-width:1200px){
   #texte_Titre{margin-bottom: 5%;}
-  .fit-picturegestion{width: 50%;height: 350px;padding-top: 10%;}
 }
 
 @media (max-width:1100px){
@@ -378,7 +376,7 @@ a:hover{color:dodgerblue;}
 }
 
 @media (max-width:950px){
-  .fit-picturegestion{width: 70%;}
+  .fit-picturegestion{width: 50%;}
   .fit-picture_template_retex{padding-top: 10%;}
 
 }
