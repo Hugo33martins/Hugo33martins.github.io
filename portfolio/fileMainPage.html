@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link href="fileMainPage.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Quattrocento&display=swap"
+        rel="stylesheet">
+    <!--link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet"-->
+
+</head>
+
+<body>
+    <nav>
+        <div id="barre_menu2">
+            <div class="menuderoulant">
+                <input type="checkbox" id="btnControl" />
+                <label class="btn" for="btnControl"><span class="btntruc">Réalisations 🛠</span>
+                    <div id="menu_deroulant">
+                        <li>
+                            <a href="1.html">Projet développement 1</a>
+                        </li>
+                        <li>
+                            <a href="2.html">Projet développement 2</a>
+                        </li>
+                        <li>
+                            <a href="3.html">Projet SQL</a>
+                        </li>
+                        <li>
+                            <a href="4.html">Projet installation poste</a>
+                        </li>
+                        <li>
+                            <a href="5.html">Projet web</a>
+                        </li>
+                        <li>
+                            <a href="6.html">Projet analyse entreprise</a>
+                        </li>
+                    </div>
+                </label>
+            </div>
+            <div id="bouton_centre"><a href="fileMainPage.html">Menu 🏠</a></div>
+            <div class="menuderoulant">
+                <input type="checkbox" id="btnControl2" />
+                <label class="btn" for="btnControl2"><span class="btntruc">Contact 📳</span>
+                    <div id="menu_deroulant2">
+                        <li>
+                            numTel : 00 00 00 00 00
+                        </li>
+                        <li>
+                            Mail : mail@mail.com
+                        </li>
+                        <li>
+                            Adresse : 500 rue de l'avenue, Ville
+                        </li>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <div id="postnav">
+        <!--img src="digitization-4770296_1920.jpg" alt="digitization" class="bg-image" /-->
+
+        <div class="partie_princ">
+            <div id="texte_intromain"><span>Bonjour ! Je suis Hugo Martins, étudiant en 1ère année de BUT
+                    informatique.<br></span></div>
+        </div>
+        <div id="partie_princ2main">
+            <div id="div1_partie_princ2main">
+                <span><br>
+                    Consultez mon premier projet en<br>cliquant sur l'image ci-dessous !<br><br></span>
+                <a href="1.html" title="image odomo pluviométrie"><img class="image-odomo" src="odomopluvio.png"
+                        alt="image de odomo pluviométrie"></a>
+            </div>
+            <div id="div2_partie_princ2main"><span><br>
+                    téléchargez mon CV en <br>cliquant sur l'image ci-dessous !<br><br></span>
+                <div id="image">
+
+                    <!--a download="MonCv.pdf" href="cvimagepixabay(1).png" title="CV icons">
+                        <img class="fit-picture" onclick="downloadImage('cvimagepixabay(1).png','MonCv.pdf')" src="cvimagepixabay(1).png" alt="icône de CV"></a-->
+                    <!--a href="cvimagepixabay(1).png" target="_blank"-->
+
+                    <img class="fit-picture" onclick="downloadImage('MonCv.pdf','MonCv.pdf')"
+                        src="cvimagepixabay(1).png" alt="icône de CV">
+
+                    <!--/a-->
+                    <!--file:///mnt/roost/users/hugmartins/S2/ppp/portfoliobtaez/portfoliobtae/portfolioba/portfoliob/portfolio/cvimagepixabay(1).png-->
+                    <!--img class="fit-picture" src="404-not-found-error.jpg" alt="erreur pas d'image"-->
+                </div>
+                <div id="a_voir">
+                    <img class="fit-picture2" onclick="downloadImage('cvimagepixabay(1).png','MonCv.pdf')"
+                        src="cvimagepixabay(1).png" alt="icône de CV">
+                    <!--a download="MonCv.pdf" href="cvimagepixabay(1).png" title="CV icons">
+                        <img class="fit-picture2" src="cvimagepixabay(1).png" alt="icône de CV"></a-->
+                    <!--img class="fit-picture2" src="404-not-found-error.jpg" alt="erreur pas d'image"-->
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <script>function downloadImage(url, name) {
+            fetch(url)
+                .then(resp => resp.blob())
+                .then(blob => {
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = url;
+                    // the filename you want
+                    a.download = name;
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                })
+                .catch(() => alert('Erreur de téléchargement.'));
+        }
+    </script>
+    <!--script>
+        var widthe, heighte;
+        window.onresize = window.onload = function () {
+            widthe = this.innerWidth;
+            heighte = this.innerHeight;
+            var qqch = document.getElementById("menu_deroulant");
+            qqch  
+            //document.body.innerHTML = width + 'x' + height; // For demo purposes
+        }
+    </script-->
+
+</body>
+
+</html>
